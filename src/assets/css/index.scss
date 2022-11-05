@@ -1,0 +1,49 @@
+@import "font.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1;
+  font-family: $font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  color: #000;
+  background-color: #fff;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 0.25vw;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.25vw;
+  // background-color: #ccc;
+}
